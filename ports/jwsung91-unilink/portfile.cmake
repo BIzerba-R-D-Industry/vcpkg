@@ -2,9 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO jwsung91/unilink
     REF v${VERSION}
-    SHA512 922a3029a4fdde4c9da895b06b56cea2d2b8002825b1c8514fb0d39d61e52dad9ba2ef1cf6a4f8ee99d82d652ad0f0d6146edb8adaa60362cc18e67d41e2040f
-    PATCHES
-        include-cstdint.patch
+    SHA512 dbcb5b551c0549c65282d1750e7b338468ea468cc38273e5eb0ee8875ce3cc39533514bf2b381f8fd5d5cf3947fed52b1b0aaf5a7a8c6d4770cabf794def0e42
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" UNILINK_BUILD_SHARED)
